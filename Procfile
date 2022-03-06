@@ -1,0 +1,1 @@
+web: java -Dspring.profiles.active=prod -jar supportportal.jar
