@@ -75,7 +75,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>supportportal</finalName>
+
 	</build>
 
 </project>
