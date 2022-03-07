@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
+@Table(name = "users")
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,7 +32,7 @@ public class User implements Serializable {
     private boolean isNotLocked;
     //ja dodao da se promjeni image name slike nakon update
     //browser ce onda biti primoran da refechuje novu sliku
-    @JsonIgnore
+    @JsonIgnore//ne salji klijentu
     private long imageNameSuffiks;
 
     public User() {
