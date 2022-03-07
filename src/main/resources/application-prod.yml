@@ -6,8 +6,9 @@ server:
 
 spring:
   datasource:
-    url: ${JDBC_DATABASE_URL:}
-
+    url: jdbc:postgresql://ec2-52-30-133-191.eu-west-1.compute.amazonaws.com/d8dntpl06rtp5k
+    username: huewbhlknyftsd
+    password: 1b140061e209ccbc12568a7db24e03b57d099310ef83ed7f350a22240bb278fd
   jpa:
     show-sql: true
     hibernate:
