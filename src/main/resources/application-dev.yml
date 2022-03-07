@@ -1,8 +1,12 @@
+server:
+  port: 8081
+
 jwt:
   secret: 'kurecpalemacecjebalec1234567890$#!'
 
-server:
-  port: 8081
+email:
+  username: "GMAIL_USERNAME"
+  password: "GMAIL_PASSWORD"
 
 spring:
   datasource:
