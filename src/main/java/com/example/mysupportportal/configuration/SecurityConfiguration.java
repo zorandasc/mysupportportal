@@ -47,10 +47,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().and().cors().and()
-                .headers()
-                    .frameOptions().sameOrigin()
-                    .httpStrictTransportSecurity().disable()
-                .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 //permit this routes
                 //public static final String[] PUBLIC_URLS={"/user/login",
