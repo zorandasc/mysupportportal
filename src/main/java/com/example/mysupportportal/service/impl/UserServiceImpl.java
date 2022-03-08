@@ -130,7 +130,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         user.setProfileImageUrl(getTemporaryProfileImageUrl(username));
         user.setImageNameSuffiks();
         LOGGER.info("New User password: " + password);
-        emailService.sendNewPasswordEmail(username,password,email);
+        //emailService.sendNewPasswordEmail(username,password,email);
         userRepository.save(user);
         //OVO AKO KORISNIK DODAJE SVOJU IMAGE
         saveProfileImage(user, profileImage);
