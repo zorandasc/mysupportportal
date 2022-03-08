@@ -51,7 +51,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 //permit this routes
                 //public static final String[] PUBLIC_URLS={"/user/login",
                 // "/user/register",/user/resetPassword","/user/image/**"};
-                .and().authorizeRequests().antMatchers(SecurityConstant.PUBLIC_URLS).permitAll()
+                .and().authorizeRequests()
+                .antMatchers("/","/login","/register","/favicon.ico","index","/css/*","/js/*").permitAll()
+                .antMatchers(SecurityConstant.PUBLIC_URLS).permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .exceptionHandling().accessDeniedHandler(jwtAccessDeniedHandler)
