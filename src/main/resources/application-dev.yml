@@ -5,8 +5,8 @@ jwt:
   secret: 'kurecpalemacecjebalec1234567890$#!'
 
 email:
-  username: "zorand666@gmail.com"
-  password: "majmunce1"
+  username: "GMAIL_USERNAM"
+  password: "GMAIL_PASSWORD"
 
 spring:
   datasource:
