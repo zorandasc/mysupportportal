@@ -5,12 +5,11 @@ jwt:
   secret: 'kurecpalemacecjebalec1234567890$#!'
 
 email:
-  username: "GMAIL_USERNAM"
+  username: "GMAIL_USERNAME"
   password: "GMAIL_PASSWORD"
 
 spring:
   datasource:
-    type: org.apache.tomcat.jdbc.pool.DataSource
     url: jdbc:postgresql://localhost:5432/supportportal
     username: postgres
     password: postgres

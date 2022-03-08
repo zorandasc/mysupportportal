@@ -105,7 +105,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         user.setProfileImageUrl(getTemporaryProfileImageUrl(username));
         user.setImageNameSuffiks();
         LOGGER.info("New User password: " + password);
-        LOGGER.info("New User : " + user);
         userRepository.save(user);
         //emailService.sendNewPasswordEmail(username,password,email);
         return user;
@@ -131,11 +130,10 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         user.setProfileImageUrl(getTemporaryProfileImageUrl(username));
         user.setImageNameSuffiks();
         LOGGER.info("New User password: " + password);
-        LOGGER.info("New User : " + user);
         userRepository.save(user);
         //OVO AKO KORISNIK DODAJE SVOJU IMAGE
         saveProfileImage(user, profileImage);
-        emailService.sendNewPasswordEmail(username,password,email);
+        //emailService.sendNewPasswordEmail(username,password,email);
         return user;
     }
 
